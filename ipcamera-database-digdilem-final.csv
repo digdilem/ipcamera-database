@@ -1,0 +1,388 @@
+id,manufacturer,model,max_reslolution,example_image_path,example_jpg_path,example_mpeg_path,wifi,poe,infra_red,notes,example_screenshot
+1,Axis,206,640x480,/axis-cgi/jpg/image.cgi?resolution=640x480,/axis-cgi/mjpg/video.cgi?resolution=640x480,blank,None,Unknown,No,Blank,
+6,Y-cam,Black,,,,,"802.11g (54mbit)",Unknown,Yes,"Daytime colours are weird, pink grass and trees. ",
+7,Axis,211,640x480,"/axis-cgi/jpg/image.cgi?resolution=640x480    ",/axis-cgi/mjpg/video.cgi?resolution=640x480,,None,Unknown,No,"A good camera with auto iris.",
+8,Axis,206,640x480,"/axis-cgi/jpg/image.cgi?resolution=640x480 ",/axis-cgi/mjpg/video.cgi?resolution=640x480,,No,Unknown,Yes,,
+15,Y-cam,White,640x480,,,,None,Unknown,Yes,,
+16,Gadspot,Gs9603,640x480,/Jpeg/CamImg.jpg,,,None,Unknown,No,"These urls probably work for many other gadspots too",
+17,Axis,207mw,640x480,/axis-cgi/jpg/image.cgi?resolution=640x480,,,"802.11g (54mbit)",Unknown,No,,
+18,Axis,207w,640x480,/axis-cgi/jpg/image.cgi?resolution=640x480,,,"802.11g (54mbit)",Unknown,No,,
+19,Panasonic,Bb-hcm531,640x480,/SnapshotJPEG?Resolution=640x480&Quality=Standard,,,None,Unknown,No,,
+20,Panasonic,Bl-c101,640x480,/SnapshotJPEG?Resolution=640x480&Quality=Standard,,,None,Unknown,Yes,,
+21,Compro,Ip70,640x480,,,/medias2,"802.11g (54mbit)",Unknown,Yes,"A well built camera that suffers from poor compatibility. 
+The mjpeg feed is a javascript wrapper around a static jpg image using random urls to increment. Not compatible.
+
+That said, the rtsp mpeg4 stream does work with zoneminder",
+22,Dealextreme,"Ip camera",640x480,/image.jpg,,,None,Unknown,Yes,"Chinese unbranded IP Camera with IR sold by dealextreme.com. Superb value at 38euros (50$usd)
+
+Provides reliable and reasonable quality vga jpg.
+
+Sourced from: 
+http://www.dealextreme.com/p/ip-400-standalone-security-surveillance-ip-network-camera-with-night-vision-15974
+
+Settings may work for other generic chinese cams as they are known to share firmware.",
+23,Linksys,"Wvc54g ",640x480,,,/img/video.asf,"802.11g (54mbit)",Unknown,No,"Poorly featured but reliable ip camera. MPEG method seems the only reliable one. Wifi surprisingly good.
+
+(Have had a report this doesnt work. It did for my camera, so I can only assume not all WVC54Gs are equal)",
+24,Abus,Tvip11550,640x480,,,:554/video.mp4,Unsure,Unknown,No,,
+25,"Airlink 101",Aic250w,640x480,,/video.cgi,,Unsure,Unknown,No,,
+26,D-link,Dcs-900w,640x480,,/video.cgi,,Unsure,Unknown,No,,
+27,"Trendnet ",Ip-200,640x480,,/video.cgi,,Unsure,Unknown,No,,
+28,Astak,Mole,320x240,/tmpfs/auto.jpg,,,Unsure,Unknown,No,,
+29,Brickcom,Wcb-100a,640x480,,/channel2,/channel1,"802.11g (54mbit)",Unknown,No,,
+30,Bsti,Pd100hv2,640x480,,/videostream.cgi&resolution=32,,Unsure,Unknown,Yes,"More detailed info at http://www.zoneminder.com/wiki/index.php/Foscam",
+31,Cisco,Wvc80n,640x480,,/img/video.mpjeg,/img/video.asf,Unsure,Unknown,No,,
+32,Foscam,Fi8908w,640x480,/snapshot.cgi,"/videostream.cgi?user=admin&pwd= &resolution=32",,Unsure,Unknown,No,,
+33,Vivotek,Ip7131,640x480,/cgi-bin/video.jpg,,,Unsure,Unknown,No,"Note! 
+You can also get 640x480 using RTSP, not http in Source tab, with the path o  live.sdp  and set port to 554
+
+More info at http://www.zoneminder.com/wiki/index.php/Vivotek",
+34,Veo,"Observer ip netcam",640x480,"/Jpeg/CamImg.jpg ","/GetData.cgi?Status=true ",,Unsure,Unknown,No,"Resolution and other configuration should be set first through the cameas web interface (IE-only) or through the CGI scripts available on the camera. 
+
+More info at <a href=http://www.zoneminder.com/wiki/index.php/Veo_Observer_IP_NetCam >http://www.zoneminder.com/wiki/index.php/Veo_Observer_IP_NetCam</a> ",
+35,Toshiba,"Ik-wd01a ",640x480,,/video2.mjpg,,Unsure,Unknown,No,,
+36,Panasonic,"Bl-c1, bl-c10, bl-c20, kx-hcm10, bb-hcm531",640x480,,"/cgi-bin/nphContinuousServerPush?Resolution=640x480&Quality=Standard ",,Unsure,Unknown,No,,
+37,Panasonic,Bl-c30,640x480,,/nphMotionJpeg?Resolution=320x240&Quality=Standard,,Unsure,Unknown,No,,
+38,Jvc,Vn-c20,640x480,,"/api/video.jpg ",,Unsure,Unknown,No,"Set resolution via web interface first.",
+39,X-vision,"X104s ",640x480,,,"/mpeg4/media.amp?resolution=640x480 ",Unsure,Unknown,No,"Note: Use RSTP instead of http. ",
+40,Zavio,"D510e, f312a",640x480,"/image.jpg ",/video.mjpg,,Unsure,Unknown,No,,
+41,Encore,Envcwi-g1,320x240,/cgi/mjpg/mjpg.cgi,/cgi/mjpg/mjpg.cgi,,"802.11g (54mbit)",Unknown,No,"Cheao cam, no high res but looks nice and works fine via wifi or wired.",
+42,Abs,"Megacam 311m",640x480,/jpg/1/image.jpg,/mjpg/1/video.mjpg,/mpeg4/media.amp?resolution=640x480,Unsure,Unknown,No,"Use RTSP instead of HTTP for the MPEG feed
+
+/mpeg4/media.amp?resolution=1024x768",
+43,"Hootoo wireless wlan ip","Ip cam",640x480,,,/videostream.cgi?user=admin&pwd=password&resolution=32,"802.11g (54mbit)",Unknown,Yes,,
+44,Axis,"M 1011-w",640x480,,,,"802.11g (54mbit)",Unknown,No,,
+45,Tp-link,Sc3130g,640x480,,/video.mjpg,rtsp://user:passwd@ip:port/video.mp4,"802.11g (54mbit)",Unknown,No,,
+46,Zecumate,Jpt3815w,640x480,,videostream.cgi,,"802.11g (54mbit)",Unknown,Yes,"Specification: http://zecumate.com/support/zecumate-jpt3815w/",
+48,Edimax,Ic-3030wn,1280x1024,/snapshot.jpg,/mjpg/video.mjpg,,"802.11n (100mbit+)",Unknown,No,"ZM non default Configuration:
+SourceType: Ffmpeg
+source Path: addr/mjpg/video.mjpg
+Capture width: 1280
+Capture height: 1024
+
+Camera non default Configuration:
+LAN addressing
+Account->anonymous->enable
+Video->resolution->MJPEG 1280x1024/highest/3 frames per second
+
+you must pull the RJ45 and re-power the unit to get it attach to the AP.",
+52,Acti,Acm1231,1280x1024,,,rtsp://192.168.1.125:7070,None,Unknown,Yes,"Video Streaming Settings:
+Streaming Method: RTP over UDP
+B2 Frame Enable: yes
+Resolution: 1280x1024
+Frame Rate Mode: Constant
+Frame Rate: 2
+Encoder Type: MPEG4
+Video Bitrate Mode: Constant Bitrate
+Video Maximum Bitrate: 750K
+RTSP Port: 7070
+Video Control Port: 6001
+Firmware Version = A1D-220-V3.12.15-AC
+
+Supports POE (Power over Ethernet)
+Ethernet: 10/100
+Support embedded event alerts.
+
+ZoneMinder Source:
+Source Path: rtsp://192.168.1.125:7070
+Source Colours: 24 bit color
+Capture Width (pixels): 1280
+Capture Height (pixels): 1024
+
+* For High res (ie 1280x1024) use low frame rate. I dont see any need to run at high frame rates for security surveillance monitoring. I prefer hi-res for fixed cameras in order to monitor a large area
+
+Night vision is OK. Needs an external IR LED to see further away than 35 feet. 
+
+",
+53,Axis,P3343,640x480,,,,None,Unknown,No,"RTSP works via 
+
+Source Type:  Ffmpeg
+rtsp://IP/axis-media/media.amp",
+54,Axis,216fd,640x480,,,/mpeg4/media.amp,None,Unknown,No,"Remote Protocol:  RTSP
+Remote Method:  RTSP
+Port:  554
+Host Path:  /mpeg4/media.amp",
+56,"Airlink 101",Aic1620w,640x480,,,,"802.11g (54mbit)",Unknown,No,"For Zoneminder this will work but I wouldnt recommend. There is a very long lag time before the camera sees an image and it is shown on Zoneminder. It has taken up too 1 minute before i have seen change in the camera feed. ",
+57,Foscam,Fi8905w,640x480,,,,"802.11g (54mbit)",Unknown,Yes,"set up in zoneminder 
+
+Remote Host Name <ipaddress>
+Remote Host Path /videostream.cgi?user=admin&pwd=&resolution=8&&rate=8
+
+320x240
+",
+58,Xenta,Eb8905w,640x480,,/videostream.cgi,,"802.11g (54mbit)",Unknown,Yes,"Unsure if user authentication can be turned off - you may need to add a user to the camera via its web admin and use for host in zoneminder; user:pass@ip  where ip is the ip of the cam.",
+60,Vivotek,7130,640x480,,,,Unsure,Unknown,No,,
+61,Tp-link,Sc-3430,1280x1024,/jpg/image.jpg,/video.mjpg,rtsp://admin.admin@ipaddress/video.mp4,None,Unknown,No,"For h.264:
+rtsp://admin.admin@ipaddress/video.h264
+For mp4:
+rtsp://admin.admin@ipaddress/video.mp4
+for MJPEG
+rtsp://admin.admin@ipaddress/video.mjpg
+
+Http: and for jpg I got it working using
+/jpg/image.jpg
+",
+62,"Sharx security","Scnc3605  vipcella -ir",640x480,/stream.jpg,/stream.jpg,,"802.11g (54mbit)",Unknown,Yes,"Nice cam, with on board memory card.",
+65,Generic,Wvc200,640x480,,,,"802.11g (54mbit)",Unknown,No,,
+67,Compro,Ip540,320x240,,,mjpeg.cgi,"802.11n (100mbit+)",Unknown,Unsure,"Wireless Capability is only add if your get a card for it.
+
+They can support up to 300 Mbits and 100Mbits via LAN",
+68,Acti,Acm-4201,640x480,,,,None,Unknown,No,,
+71,"Night owl",K-44500-c,640x480,,,,"802.11g (54mbit)",Unknown,Yes,,
+72,Allnet,All2296v2,640x480,,rtsp://i1.2.3.4/mjpeg,/h264,None,Unknown,Yes,,
+73,Encore,Envcwi-ptg1,640x480,,,,"802.11g (54mbit)",Unknown,No,,
+74,Vivotek,Ip8362,640x480,,,/live.sdp,Unsure,Unknown,No,"MPEG4 resolution is 1920x1080
+
+Full review at www.zoneminder.com/forums/viewtopic.php?f=29&t=19641",
+89,D-link,Dcs-930l,640x480,/image.jpg,,,"802.11g (54mbit)",Unknown,No,"Cheap and basic IP camera that performs adequately.
+
+/image.jpg works reliably giving ~10fps, /image/video.jpg is cached so doesnt update frequently enough.",
+90,Edimax,"Ic 3030",640x480,,/snapshot.jpg,/ipcam.sdp,"802.11g (54mbit)",Unknown,No,"Good solid camera, well featured, reasonable image quality.
+
+RTSP for MPEG4 and H264
+
+Eg, select FFMPEG as camera type, and following URL:
+rtsp://user:pass@192.168.0.1:554/ipcam.sdp",
+91,D-link,932l,640x480,/image/jpeg.cgi,,,"802.11n (100mbit+)",Unknown,Yes,,
+92,Vivotek,6122,640x480,,,,None,Unknown,No,,
+104,Agasio,A612-poe,640x480,,,,None,Unknown,Yes,"You must fix Memory issue by editing sudo gedit /etc/sysctl.conf
+
+echo 134217728 >/proc/sys/kernel/shmall
+echo 134217728 >/proc/sys/kernel/shmmax",
+105,Tp-link,Sc-3130,640x480,,,,Unsure,Unknown,No,,
+117,Wansview,Nc543w,320x240,/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD],/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD],/videostream.asf,"802.11g (54mbit)",Unknown,Yes,"settings only seem to work when the wansview software is set for 320x240 for me.",
+118,"Arecont vision",Av8185,1600x1200,/image#,/mjpeg#,,None,Unknown,"Yes (external source","This is a quad sensor IP Camera  Replace the # with the sensor number ie: /mjpeg1 for sensor 1 or
+/image2 for sensor 2. ",
+119,Kelcom,Hlc-79ad,640x480,GetImage.cgi?CH=1,,,None,Unknown,Yes,,
+133,Axis,206w,640x480,/axis-cgi/jpg/image.cgi?resolution=640x480,,,"802.11g (54mbit)",Unknown,No,"Does well in low light.",
+134,Tp-link,Tp-sc2020n,,,video.mjpg,,"802.11n (100mbit+)",Unknown,No,"Camera admin web interface -
+Video sizes available: 640x480, 320x240, 160x120.
+Framerates available: 30, 20, 15, 10, 7, 5, 1.",
+135,Tp-link,Sc3130g,640x480,,,,"802.11g (54mbit)",Unknown,No,,
+136,B-qtech,Bq-n05w,640x480,,,,"802.11n (100mbit+)",Unknown,Yes,"H.264 camera. Settings to access stream rtsp://camera-ip:554/11 for main stream or rtsp://camera-ip:554/12 for sub stream. Resolution 1280x720, 640x360, and 320x180. Use FFMPEG in Zoneminder",
+137,Generic," acm1231",640x480,,,,None,Unknown,Yes,,
+139,"Generic / clone (wansview nl610)",Nl610,640x480,http://192.168.x.x/snapshot.cgi?user=admin&pwd=123456&count=0,,,"802.11n (100mbit+)",Unknown,Yes,,
+145,Jvc,"Vn-v26u (vn-v25u)",640x480,/api/video?encode=jpeg,,/api/video?encode=mpeg4,None,Unknown,"Yes (external source","Can do multicast JPG MPeg4 and Audio but I cant get it to work. Cant get mpeg4 to work in Zoneminder but works OK in BlueIris. Note that the manual available online states that default password is vn-v2x  but there are 2 firmware versions. the newest fw uses  jvc  as the password.",
+148,"Arecont vision",Av5100,1600x1200,/image?res=full&x0=0&y0=0&x1=1600&y1=1200&quality=15&doublescan=0&autoexp=on,/mjpeg?res=half&x0=0&y0=0&x1=1600&y1=1200&quality=12&doublescan=0,"/h264stream?res=(half|full)&x0=(0..2596)&y0=(0..1944)&x1=(32..2596)&y1=(32..1944) & q p=(4..36)&doublescan=(0|1)&ssn=(1..65535)[&fps=value][&bitrate=(1..51200)]",None,Unknown,"Yes (external source","The camera parameters can be accessed via the HTTP requests of the following format:
+http://ip_address/set?parameter=value
+http://ip_address/get?parameter
+
+Examples:
+http://192.168.0.36/set?brightness=15
+http://192.168.0.36/get?brightness
+
+The following parameter requests are supported via HTTP protocol by Arecont Vision cameras:
+brightness – image brightness (valid values are from -50 to 50)
+
+sharpness – image sharpening(valid values are from 0 to 4)
+
+saturation – color saturation (valid values from 0 to 6)
+
+blue - blue tint adjustment (valid values from -10 to +10)
+
+red - red tint adjustment (valid values from -10 to +10)
+
+illum – illumination setting for auto white balance (valid values are auto, indoor, outdoor, mix)
+
+freq – frequency of AC powered light sources (valid values are 50 and 60)
+
+lowlight – low light mode of the camera, allows tradeoff between frame rate and image quality (valid values are balance, speed, quality, highspeed, moonlight). If highspeed is used, an additional parameter shortexposures can be set with valid values from 1 to 10.
+
+rotate – image rotation (valid values are 0 and 180)
+
+autoexp – allows to turn on and off auto exposure (valid values are on and off)
+
+expwndleft - left coordinate of user-defined auto-exposure measurement window (valid values should
+fall within sensor window)
+
+expwndtop - top coordinate of user-defined auto-exposure measurement window (valid values should
+fall within sensor window)
+
+expwndwidth - width of user-defined auto-exposure measurement window (valid values should fall within sensor window)
+
+expwndheight – height of user-defined auto-exposure measurement window (valid values should fall within sensor window)
+
+sensorleft - left coordinate of sensor window (valid values defined by sensor size)
+
+sensortop - top coordinate of sensor window (valid values defined by sensor size)
+
+sensorwidth - width of sensor window (valid values defined by sensor size; this value affects sensor
+frame rate)
+
+se nsorheight - height of sensor window (valid values defined by sensor size; this value affects sensor
+frame rate)
+
+imgleft - left coordinate of the default image returned in response to the simple request
+h t tp://ip_address/img.jpg (valid values should fall within the camera’s sensor window)
+
+imgtop - top coordinate of the default image returned in response to the simple request
+http://ip_address/img.jpg (valid values should fall within the camera’s sensor window)
+
+imgwidth – width of the default image returned in response to the simple request http://ip_address/img.jpg (valid values should fall within the camera’s sensor window)
+ i mgheight - height of the default image returned in response to the simple request
+h t tp://ip_address/img.jpg (valid values should fall within sensor window)
+
+imgquality – quality setting of the image returned in response to the simple request http://ip_address/img.jpg (valid values 1 to 21)
+
+imgres – resolution of the default image returned in response to the simple request http://ip_address/img.jpg (valid values are full and half, where half is used to request images
+decimated by a factor of 2 in both directions)
+
+auto-iris – allows to enable and disable auto-iris (valid values are on and off)
+
+irisgain – allows to specify threshold for closing the auto-iris (valid values are from 8 to 255)
+
+save – saves current camera configuration (all parameter values) in the non-volatile memory
+http://ip_address/set?params=save
+
+mac – retrieves the MAC address of the camera (read-only)
+
+make – retrieves the manufacturer 
+abbreviation(requires firmware version 64116)
+
+model – retrieves a four-digit camera model number (read-only, e.g. AV2100M camera will return
+“model=2100”)",
+149,Iqinvision,"Iqeye a12s",720x480,/now.jpg?snap=spush?ds=1,,,None,Unknown,"Yes (external source",,
+150,Grandstream,Gxv3672-fhd,1920x1080,/snapshot/view0.jpg,,/0,None,Unknown,Yes,"Supports Power over Ethernet.  Vandal proof mounting.",
+152,Allnet,Ip2288,640x480,,,,None,Unknown,No,"Use Ffmpeg, no maximum frames set.
+
+rtsp://192.168.1.11:554/h264",
+154,Gkb,Ic202/w,640x480,,,,None,Unknown,No,,
+155,Canon,Vb-c10r,640x480,/-wvhttp-01-/GetOneShot,/-wvhttp-01-/GetOneShot?frame_count=0,,None,Unknown,No,,
+156,Panasonic,Bl-c230,640x480,,,,"802.11b (11mbit)",Unknown,No,"In order to get the Pan Tilt Zoom (PTZ) function of this wifi IP Camera working with ZoneMinder, do the following:
+
+IN THE SOURCE TAB:
+
+Remote Protocal: HTTP
+Remote Method: Simple
+Remote Host Name:
+YourUsername:YourPassword@IPAddressOfYourCamera
+Remote Host Port: 6001
+Remote Host Path: /nphMotionJpeg?Resolution=640x480&Quality=Standard
+Remote Image Colors: 25 bit color
+Capture Width:640
+Capture Height:480
+
+IN THE CONTROL TAB:
+
+Controllable: Tick this box
+Control Type: Panasonic IP
+Control Address: Same as above BUT you have to add the Port Number at the end e.g.
+YourUsername:YourPassword@IPAddressOfYourCamera:6001
+ 
+",
+158,Escam,Qd300,,,,//user=admin&password=tlJwpbo6&channel=1&stream=0.sdp,None,Unknown,Yes,,
+159,Foscam,Fi8916w,640x480,,/videostream.cgi?user=visitor&pwd=password&rate=6,,"802.11g (54mbit)",Unknown,Yes,"For the money, its very good value. With IR-Cut. Controllable via Zoneminder.",
+160,Ganvis,Gv-t540,640x480,,,/snapshot.cgi?user=admin&pwd=123456&count=0,None,Unknown,Yes,"The path  /snapshot.cgi?user=admin&pwd=123456&count=0   directs to Sub-Stream.",
+162,Generic,Top-201,1280x720,,,,None,Unknown,No,"Pinhole rtsp cam
+
+defaultpoerts:
+
+web: 80
+media: 34567
+
+defaultuser admin
+",
+164,Foscam,Fi9903p,640x480,,,,None,Unknown,Yes,,
+165,Veo,Mac00036401e85e,640x480,,,,Unsure,Unknown,No,,
+166,Dahua,Hfw1220s,640x480,rtsp://admin:admin@10.1.1.106:554/cam/realmonitor?channel=1&subtype=0,rtsp://admin:admin@10.1.1.106:554/cam/realmonitor?channel=1&subtype=0,,None,Unknown,Yes,,
+167,Hikvision,Ds-2cd833f,640x480,,,admin:12345@192.168.2.65:554/ISAPI/streaming/channels/101,Unsure,Unknown,No,"As example, connect to substream
+rtsp://192.168.2.65:554/ISAPI/streaming/channels/102?auth=YWRtaW46MTIzNDU=",
+168,Edimax,Ic-3116w,640x480,,,,Unsure,Unknown,No,,
+169,Maginon,"Ipc-25 hd",640x480,,,,Unsure,Unknown,Yes,,
+170,Hikvision,Ds-2cd2032-i,,,,/Streaming/Channels/101?transportmode=unicast&profile=Profile1,None,Unknown,Yes,,
+171,Dbpower,C300e,640x480,,,/11,"802.11g (54mbit)",Unknown,Yes,,
+172,Dbpower,C300e,640x480,,,/11,"802.11g (54mbit)",Unknown,Yes,,
+173,Escam,Qd900wifi,640x480,,rtsp://<ip>:554/11,/11,"802.11g (54mbit)",Unknown,Yes,"PROS:
+does not require windows at all!
+does not require activex at all!
+fully configurable in ANY browser including firefox on linux and  android chrome 
+good overall image quality at 1080p during day
+ok image quality at night
+easy access to the streams rtsp://<ip>:554/11 (1080p) or /12 (720p) 
+
+CONS:
+no built in POE
+
+depending on circumstances night image can be a bit noisy
+
+It tries to hold onto daylight mode too long and uses too much gain at dusk. Fixed by 1/2 covering the light sensor with black tape so it switches to IR night mode sooner (or later in the morning) ",
+174,Widix,Wdx-ipd4036k3k-h,,,,/ch00/A,None,Unknown,Yes,"Model 	WDX-IPD4036K3K-HY
+Resolution 	4Mpix (2592 x 1520)
+Video Compression 	H.265 / H.264 / MJPEG
+Frame Rate
+Mainstream (Default 20fps @ 4Mpix) 	4Mpix @ 20fps / 3Mpix, 1080P, 960P, 720P @ 25fps
+Substream (Default 20fps @ D1 / Mainstream @ 4 Mpix) 	D1, VGA, QVGA @ 20fps
+Substream (Default 30fps @ D1 / Mainstream @ 3 Mpix) 	D1, VGA, QVGA @ 25fps
+Mobile Stream (Default 10fps / Mainstream @ 4Mpix) 	QVGA @ 20fps
+Mobile Stream (Default 10fps / Mainstream @ 3Mpix) 	QVGA @ 25fps
+General
+Lens 	3.6mm
+IR Lighting 	30m
+Day & Night 	IR-CUT filter with auto switch
+SD Storage 	N/A
+Alarm Tigger 	N/A
+Audio 	N/A
+Video Output 	N/A
+Reset Button 	N/A
+System Compatibility 	ONVIF
+Ethernet Interface 	1 RJ45 10/100M
+PoE 	Yes
+Weatherproof 	IP66 indoor / outdoor
+Power Supply 	PoE / DC12V ",
+175,Ctronics,Ctipc-537c1080p,,,,/11,None,Unknown,Yes,"substream accessible via rtsp://ip:554/12",
+176,Dahua,Ipc,640x480,,,,Unsure,Unknown,No,,
+183,Sricam,"Ip camera, dpow vision",640x480,,,,"802.11g (54mbit)",Unknown,Yes,"Use ONVIF probe in Zoneminder.
+
+It has two feeds ,320x240 (Feed2) and 1280x720 (Feed 1)
+
+Manual path settings are FFMPEG and rtsp://:@10.1.0.112:554/onvif1 for 1280x720
+
+Does 15fps on a single feed. Too early to say how reliable but probably not great. Power is a 5v USB micro connector. No RJ45 connector, wifi only. Cannot set network details manually (broken interface) but DHCP works.
+
+Cheap small camera. Android app is buggy. Website does not respond from Europe. Forget about support. ",
+184,Tp-link,Nc200,640x480,,/stream/getvideo,/stream/getvideo,"802.11n (100mbit+)",Unknown,No,"Here are the configuration details for Zoneminder 1.30.4, successfully tested on August 1st 2017. If you have any question, feel free to ask me (aktarus82@caramail.com)
+
+Source type: remote
+Remote protocoll: HTTP
+Remote method: Regexp
+Remote host name: [user]:[pwd]@[cam-ipaddress]
+Remote host port: 8080
+Remote host path: /stream/getvideo
+Target colorspace: 24 bit
+Capture width/height: 640/480
+
+For the Remote host name ",
+185,Generic,"Owlcat nr4x",640x480,,,,None,Unknown,Yes,"Brand Name:OwlCatModel Number: NR4X/ NR10XPower Supply:Normal
+Dimensions (L x W x D)(mm):240mmx95mmx190mm
+Supported Mobile Systems:iOS,Android
+Video Compression Format:H.264 
+Alarm Action:FTP Photo,Email 
+PhotoTechnology:Pan / Tilt / Zoom
+Style:Bullet Camerais_
+customized:NoAudio Output:None
+Minimum Illumination(Lux):Color 1.0Lux, F1.2; B/W 0.1 Lux, F1.2
+Sensor:CMOS
+Storage:None
+Wall Bracket:Side
+Viewing Angle (Degree):85Â°Power Supply(V):DC12V2ATF 
+Card:None
+Power Consumption(W):24w
+Network Interface:RJ-45 10/100Mb Ethernet Slot
+High Definition:1080P(Full-HD)Sensor Brand:SONY
+Connectivity:IP/Network Wired
+IR Distance(m):10-60m
+Installation:Side
+Type:IP Camera
+Special Features:Waterproof / Weatherproof
+Color:WhiteLens (mm):4x zoom /10x zoom
+High Definition:1080P(Full-HD)
+Image Sensor:Hi 3518E+sony 323
+Frame rate:2.0 Mega pixels 30 fps (real time)
+Lens:2.8mm-12mm autofocus 4x zoom Pan Tilt Zoom lens
+Day& Night:IR cut filter with auto switch
+System Compatibility:ONVIF 2.0
+Material:Metal top cover + Plastic body
+Bracket:IncludeZoom Control:Remote Control Auto PAN TILT ZOOMSupported 
+Mobile Systems:iPhone OS/Android",
+187,Sv3c,Sv-b01poe-5mpl-a,640x480,,,rtsp://USERNAME:PASSWORD@IP:554/,None,Unknown,Yes,,
+188,"Urban security group",Usgdk7084sgpaf,1920x1080,/user=admin_password=_channel=0_stream=0.sdp?real_stream,/user=admin_password=_channel=0_stream=0.sdp?real_stream,/user=admin_password=_channel=0_stream=0.sdp?real_stream,None,Unknown,Yes,Blank,
